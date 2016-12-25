@@ -1,0 +1,173 @@
+\documentclass[a4paper, 12pt]{article}
+
+% english
+\usepackage[english]{babel}
+\usepackage{lmodern}
+
+% packages
+\usepackage{fullpage}       % really narrow margins
+\usepackage{graphicx}       % \includegraphics
+\usepackage{amsmath}        % \text
+\usepackage{multirow}       % \multirow   
+\usepackage{enumitem}       % \setitemsize
+\usepackage{appendix}       % appendix env
+\usepackage{pgf, tikz}      % figures
+
+% margin
+\usepackage{geometry}
+\geometry{
+  a4paper,
+  left=10mm,
+  right=10mm,
+  top=10mm,
+  bottom=10mm
+}
+
+% style
+\setlength\parindent{0pt}                         % no indentation
+\setitemize{itemsep=-0.1cm}                          % no space between itms
+\newcommand{\marginline}{-0.3cm}
+\newcommand{\margincontent}{-0.6cm}
+\newcommand{\marginsummary}{-0.3cm}
+\newcommand{\marginaftersummary}{0.2cm}
+\newcommand{\marginmisc}{0.15cm}
+\newcommand{\marginbeforemisc}{-0.35cm}
+\newcommand{\linewidthperso}{0.02cm}
+
+% document
+\begin{document}
+\pagenumbering{gobble}
+\begin{footnotesize}
+
+\begin{center}
+  \begin{small}\textbf{OLIVIER DEISS}\end{small}\\
+  6 Rue de l'Enclos -- 14112 P\'eriers-Sur-Le-Dan -- France\\
+  +33 (0) 6 02 07 76 38 -- olivier.deiss@gatech.edu\\
+  \textbf{http://olivierdeiss.com}
+\end{center}
+
+\textbf{SUMMARY}
+\vspace{\marginline}\\
+\noindent\makebox[\linewidth]{\rule{\textwidth}{\linewidthperso}}
+
+\vspace{\marginsummary}
+\begin{itemize}
+  \item Candidate for a MSc. in Computer Science at Georgia Tech Lorraine
+  \item Professional experience in software development and testing on large-scale projects (Eikon, $\sim$20M lines of code)
+  \item Experience in version controling and development in teams with \textit{C++}, \textit{Java} and \textit{Javascript}
+\end{itemize}
+\vspace{\marginaftersummary}
+
+\textbf{EDUCATION}
+\vspace{\marginline}\\
+\noindent\makebox[\linewidth]{\rule{\textwidth}{\linewidthperso}}
+
+\textbf{GEORGIA INSTITUTE OF TECHNOLOGY -- LORRAINE CAMPUS} \hfill \textbf{Metz, FRA}\\
+\textit{Candidate for Master of Science in Computer Science} \hfill \textit{Aug. 2016 -- Dec. 2017}\\
+\vspace{\margincontent}
+\begin{itemize}
+  \item Specialization in Machine Learning, courses in artificial intelligence, machine learning, algorithms. \hfill GPA: 4.00
+  \item Research: building an API with Hadoop/MapReduce for the classification of images (200 Gb).
+\end{itemize}
+
+\textbf{SUP\'ELEC} \hfill \textbf{Metz, FRA}\\
+\textit{Bachelor of Science in Electrical and Computer Engineering} \hfill \textit{Sep. 2014 -- Jul. 2016}\\
+\vspace{\margincontent}
+\begin{itemize}
+  \item Courses in algorithms \& complexity, computer architecture and software engineering. \hfill GPA: 3.93
+\end{itemize}
+
+\textbf{LYC\'EE PIERRE CORNEILLE} \hfill \textbf{Rouen, FRA}\\
+\textit{Preparatory Classes} \hfill \textit{Sep. 2012 -- Jun. 2014}\\
+\vspace{\margincontent}
+\begin{itemize}
+  \item Intensive program in advanced maths and physics \hfill Rank: 1/45
+\end{itemize}
+
+\textbf{EXPERIENCES}
+\vspace{\marginline}\\
+\noindent\makebox[\linewidth]{\rule{\textwidth}{\linewidthperso}}
+
+\textbf{THOMSON REUTERS} \hfill \textbf{London, UK}\\ 
+\textit{Software Developer Intern, Eikon Financial Analysis} \hfill \textit{Jul. 2016 -- Aug. 2016}\\
+\vspace{\margincontent}
+\begin{itemize}
+  \item Turned error messages into selling opportunities (up to +\$2.3M per year) by implementing a \textit{Polymer} component, easily embeddable in apps, which displays a list of products when users try to access unauthorized content.
+  \item Built demo apps to introduce the feature, using \textit{Node.js}, \textit{Neo4j} and \textit{Python} scripts, and personally presented my work to various cross-functional teams within Thomson Reuters.
+  \item Wrote unit tests (\textit{Mocha}/\textit{Chai}) and thorough documentation, ensuring a wide internal use of the component.
+  \item My work has been shown to James Smith, CEO of Thomson Reuters, and won an internal innovation contest.
+\end{itemize}
+
+\textbf{INSTRUCTOR LIVE} \hfill \textbf{London, UK}\\
+\textit{Full-Stack Developer Intern} \hfill \textit{Jun. 2015 -- Aug. 2015}\\
+\vspace{\margincontent}
+\begin{itemize}
+  \item Implemented a new user type on the webserver, integrating the new business model on the back-end logic.
+  \item Heavily reinforced the overall security by switching access restrictions from front-end to back-end.
+  \item Developed a new video player for the Android and Samsung Smart TV apps, supporting a new content provider.
+  \item Designed a workout planner and a calendar module for the front-end on \textit{Angular.js}, encouraging subscriptions.
+\end{itemize}
+
+%\textbf{JUNIOR SUP\'ELEC STRAT\'EGIE} \hfill \textbf{Metz, FRA}\\
+%\textit{Technical Consultant} \hfill \textit{Oct. 2014 -- Jun. 2015}\\
+%\vspace{\margincontent}
+%\begin{itemize}
+  %\item Updated a Drupal module for The European Commission, aligning its design with the theme of their platform.
+%\end{itemize}
+
+\textbf{SELECTED PROJECTS}
+\vspace{\marginline}\\
+\noindent\makebox[\linewidth]{\rule{\textwidth}{\linewidthperso}}
+   
+\textbf{BRAIN-COMPUTER INTERFACE} \hfill \textbf{Metz, FRA}\\
+\textit{Research at Sup\'elec} \hfill \textit{Nov. 2015 -- Jun. 2016}\\
+\vspace{\margincontent}
+\begin{itemize}
+  \item Led a research group through the development of software that performs real-time classification of brainwaves related to the movement of the hands, ultimately achieving 70\% of correct classification.
+  \item Architected the solution, from the spectral analysis of brainwaves on \textit{Matlab}, to the algorithm design and its \textit{C++} implementation, using a combination of unsupervised machine learning and signal processing.
+  \item Interpreted the algorithm output with a \textit{ROS} interface, making it possible to pilot a robot by moving the hands.
+\end{itemize}
+
+\textbf{PERSONAL PROJECTS}\\
+\vspace{\margincontent}
+\begin{itemize}
+  \item \textit{DigitScanner:} implemented a feedforward neural network, a matrix library and the stochastic gradient descent in \textit{C++}, ultimately achieving 98.24\% of correct classification on the MNIST dataset.
+  \item \textit{FFTOcean:} implemented an FFT algorithm for the real-time simulation of ocean water in \textit{C++}, with \textit{OpenGL}.
+\end{itemize}
+
+%\textbf{DIGITSCANNER} \hfill \textbf{Metz, FRA}\\
+%\textit{Personal project -- Handwritten number recognition} \hfill \textit{Oct. 2015 -- Apr. 2016}\\
+%\vspace{\margincontent}
+%\begin{itemize}
+  %\item Implemented a feedforward neural network, a matrix library and the stochastic gradient descent in C++, ultimately achieving 98.24\% of correct classification on the MNIST dataset.
+%\end{itemize}
+%
+%\textbf{FFTOCEAN} \hfill \textbf{Metz, FRA}\\
+%\textit{Personal project -- Simulation of Ocean Water} \hfill \textit{Jul. 2014}\\
+%\vspace{\margincontent}
+%\begin{itemize}
+  %\item Implemented the Cooley-Tukey FFT algorithm for the real-time simulation of ocean water in C++, with OpenGL.
+%\end{itemize}
+
+\textbf{SKILLS, INTERESTS}
+\vspace{\marginline}\\
+\noindent\makebox[\linewidth]{\rule{\textwidth}{\linewidthperso}}
+\vspace{\marginbeforemisc}
+
+\noindent\begin{tabular}{@{}p{9cm}p{8cm}}
+  \textbf{Programming (advanced):} \textit{C++}, \textit{python}, \textit{Java} & \textbf{Softwares:} \textit{Git}, \textit{LaTeX}\\
+  \textbf{Programming (intermediate):} \textit{php}, \textit{javascript} & \textbf{Languages:} English (professional proficiency)\\
+  \textbf{Frameworks:} \textit{Angular.js}, \textit{Node.js}, \textit{Polymer}, \textit{Qt} & \hspace{2cm} French (native)
+\end{tabular}
+
+\vspace{\marginmisc}
+\textbf{GRE:} 168/170 (Quant) -- 158/170 (Verb) -- 4/6 (Writing)
+
+\vspace{\marginmisc}
+\textbf{NewbieContest.org:} -- Rank: 192/41858 (Dec. 2016) -- Online hacking, cracking, and coding challenges
+
+\vspace{\marginmisc}
+I keep exploring the world, bringing with me the last algorithm book that caught my curiosity. Asia is next on my list. I love pastries, badminton, hiking and biking. I am currently learning the wonderful Go game!
+  
+\end{footnotesize}
+\end{document}
