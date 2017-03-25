@@ -29,24 +29,24 @@
 \newcommand{\marginline}{-0.3cm}
 \newcommand{\margincontent}{-0.6cm}
 \newcommand{\marginsummary}{-0.3cm}
-\newcommand{\marginbeforesection}{0.3cm}
+\newcommand{\marginbeforesection}{0.35cm}
 \newcommand{\marginaftersummary}{0.2cm}
 \newcommand{\marginmisc}{0.3cm}
 \newcommand{\marginbeforemisc}{-0.75cm}
 \newcommand{\linewidthperso}{0.02cm}
 
 % styles
-\newcommand{\stylesection}[1]{
-  \vspace{\marginbeforesection}
-  \begin{normalsize}\textit{#1}\end{normalsize}
-  \vspace{\marginline}\\
-  \noindent\makebox[\linewidth]{\rule{\textwidth}{\linewidthperso}}
-
-}
 \newcommand{\styletitle}[1]{\textbf{#1}}
 \newcommand{\styledesc}[1]{\textit{#1}}
 \newcommand{\styleloc}[1]{\textbf{#1}}
 \newcommand{\styledates}[1]{\textit{#1}}
+\newcommand{\stylesection}[1]{
+  \vspace{\marginbeforesection}
+  \begin{normalsize}$\triangleright$ \textit{#1}\end{normalsize}
+  \vspace{\marginline}\\
+  \noindent\makebox[\linewidth]{\rule{\textwidth}{\linewidthperso}}
+
+}
 
 % document
 \begin{document}
@@ -60,23 +60,22 @@
   \textbf{http://olivierdeiss.com}
 \end{center}
 
-\stylesection{SUMMARY}
+\stylesection{Summary}
 
 \vspace{\marginsummary}
 \begin{itemize}
-  \item Candidate for a MSc. in Computer Science at Georgia Tech
-  \item Professional experience in software development and testing on large-scale projects (Eikon, $\sim$20M lines of code)
-  \item Experience in version controling and development in teams with \textit{C++}, \textit{Java} and \textit{Javascript}
+  \item Candidate for a MSc. in Computer Science at Georgia Tech, expected to graduate in June 2018.
+  \item Professional experience in software development on large-scale, complex projects (Eikon, Google Assistant).
 \end{itemize}
 \vspace{\marginaftersummary}
 
-\stylesection{EDUCATION}
+\stylesection{Education}
 
 \styletitle{GEORGIA INSTITUTE OF TECHNOLOGY} \hfill \styleloc{Atlanta, GA, USA}\\
 \styledesc{Candidate for Master of Science in Computer Science} \hfill \styledates{Aug. 2016 -- Jun. 2018}\\
 \vspace{\margincontent}
 \begin{itemize}
-  \item Specialization in machine learning, with courses in AI, machine learning, and algorithm design. \hfill GPA: 4.00
+  \item Specialization in machine learning, with courses in AI, complexity, and algorithm design. \hfill GPA: 4.00
   \item First semester (Fall 2016) on the Lorraine Campus in Metz, France, followed by a Co-op during Spring 2017.
   \item Research (Fall 2016): set up a Hadoop cluster of five nodes for the analysis of rosbags (ROS) with \textit{C++} jobs.
 \end{itemize}
@@ -95,21 +94,23 @@
   \item Intensive program in advanced maths and physics. \hfill Rank: 1/45
 \end{itemize}
 
-\stylesection{EXPERIENCES}
+\stylesection{Experiences}
 
 \styletitle{GOOGLE} \hfill \styleloc{Mountain View, CA, USA}\\ 
-\styledesc{Software Engineer Intern, Google Assistant} \hfill \styledates{Jan. 2017 -- Apr. 2017}\\
+\styledesc{Software Engineer Intern, Assistant, Android TV} \hfill \styledates{Jan. 2017 -- Apr. 2017}\\
 \vspace{\margincontent}
 \begin{itemize}
-  \item Working on Assistant Server, the \textit{C++} backend for Google Assistant, and on the client-side in \textit{Java}.
+  \item Designed and implemented a messaging infrastructure between Assistant Server and Android TV, enabling support for native apps in cross-device scenarios -- e.g. queries to Google Home targeting Android TV. (\textit{C++}, \textit{Android}).
+  \item Integrated this infrastructure as a preferred alternative to Cast, now used for some media queries on the TV.
+  %\item Overall, contributed to the codebase with 2000 SLOC of client/server design updates and unit tests in production. 
 \end{itemize}
 
 \styletitle{THOMSON REUTERS} \hfill \styleloc{London, UK}\\ 
 \styledesc{Software Developer Intern, Technology, Eikon Financial Analysis} \hfill \styledates{Jul. 2016 -- Aug. 2016}\\
 \vspace{\margincontent}
 \begin{itemize}
-  \item Turned error messages into selling opportunities (up to +\$2.3M per year) by implementing a \textit{Polymer} component, easily embeddable in apps, which displays a list of available products when users try to access unauthorized content.
-  \item Built demo apps to introduce the feature to existing customers, using \textit{Node.js}, \textit{Neo4j} and \textit{Python} scripts, as well as unit tests with \textit{Mocha}/\textit{Chai}, and a documentation, ensuring a wide internal use of the component.
+  \item Implemented a component that replaces error messages with a list of available products when users try to access unauthorized content, in all of the platform's apps, turning error messages into selling opportunities (\textit{Polymer}).
+  \item Built demo apps to introduce the feature to customers (\textit{Node.js}, \textit{Neo4j}, \textit{Python} and \textit{Mocha}/\textit{Chai} for unit tests).
   \item My work has been shown to James Smith, CEO of Thomson Reuters, and won an internal innovation contest.
 \end{itemize}
 
@@ -119,10 +120,10 @@
 \begin{itemize}
   \item Developed a new video player for the Android and Samsung Smart TV apps, supporting a new content provider.
   \item Implemented a new user type on the webserver that integrates the new business model on the back-end logic.
-  \item Designed a workout planner and a calendar module for the front-end on \textit{Angular.js}, encouraging subscriptions.
+  \item Designed a workout planner and a calendar module for the front-end, encouraging subscriptions (\textit{Angular.js}).
 \end{itemize}
 
-\stylesection{SELECTED PROJECTS}
+\stylesection{Selected Projects}
    
 \styletitle{BRAIN-COMPUTER INTERFACE} \hfill \styleloc{Metz, FRA}\\
 \styledesc{Research at Sup\'elec} \hfill \styledates{Nov. 2015 -- Jun. 2016}\\
@@ -135,23 +136,23 @@
 \styletitle{PERSONAL PROJECTS}\\
 \vspace{\margincontent}
 \begin{itemize}
-  \item \textit{DigitScanner:} implemented a feedforward neural network, achieving 98.24\% of correct classification (MNIST).
+  \item \textit{DigitScanner:} implemented a neural network from scratch, achieving 98.24\% of correct classification (MNIST).
   \item \textit{FFTOcean:} implemented an FFT algorithm for the real-time simulation of ocean water in \textit{C++}, with \textit{OpenGL}.
 \end{itemize}
 
-\stylesection{SKILLS \& INTERESTS}
+\stylesection{Skills \& Interests}
 ~\\
 \vspace{\marginbeforemisc}
 
 \noindent\begin{tabular}{@{}p{7cm}p{12cm}}
-  \textbf{Languages:} \textit{C++}, \textit{Python}, \textit{Java}, \textit{Javascript} & \textbf{GRE:} 168/170 (Quant) -- 158/170 (Verb) -- 4/6 (Writing)\\
+  \textbf{Languages:} \textit{C++}, \textit{Java}, \textit{Python}, \textit{Javascript} & \textbf{GRE:} 168/170 (Quant) -- 158/170 (Verb) -- 4/6 (Writing)\\
   \textbf{Languages:} English, French & \textbf{NewbieContest:} Rank: 192/41858 -- Online hacking/coding challenges.\\
 \end{tabular}
 
 \vspace{\marginmisc}
 
 \renewcommand{\baselinestretch}{0.8}
-I practice badminton, hiking and personal development: last year I switched to \textit{Vim}, learned touch typing, and totally quit drinking sodas. This year I am getting into running, I will keep on traveling out of France and learning more about science and algorithms.
+I love badminton, algorithms, hiking, \textit{C++} and learning new things. Last year I switched to \textit{Vim} and learned touch typing. This year, I started running and investing too much of my free time in learning the game of \textit{Go}: it's hard but wonderful!
 
 \end{footnotesize}
 \end{document}
