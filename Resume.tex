@@ -12,6 +12,7 @@
 \usepackage{enumitem}       % \setitemsize
 \usepackage{appendix}       % appendix env
 \usepackage{pgf, tikz}      % figures
+\usepackage{hyperref}       % url
 
 % margin
 \usepackage{geometry}
@@ -29,7 +30,7 @@
 \newcommand{\marginline}{-0.3cm}
 \newcommand{\margincontent}{-0.6cm}
 \newcommand{\marginsummary}{-0.3cm}
-\newcommand{\marginbeforesection}{0.35cm}
+\newcommand{\marginbeforesection}{0.45cm}
 \newcommand{\marginaftersummary}{0.2cm}
 \newcommand{\marginmisc}{0.3cm}
 \newcommand{\marginbeforemisc}{-0.75cm}
@@ -40,6 +41,12 @@
 \newcommand{\styledesc}[1]{\textit{#1}}
 \newcommand{\styleloc}[1]{\textbf{#1}}
 \newcommand{\styledates}[1]{\textit{#1}}
+\newcommand{\stylesummary}[1]{
+  \vspace{\marginbeforesection}
+  \begin{normalsize}\textit{#1}\end{normalsize}
+  \vspace{\marginline}\\
+
+}
 \newcommand{\stylesection}[1]{
   \vspace{\marginbeforesection}
   \begin{normalsize}\textit{#1}\end{normalsize}
@@ -56,15 +63,17 @@
 \begin{center}
   \begin{small}\textbf{OLIVIER DEISS}\end{small}\\
   6 Rue de l'Enclos -- 14112 P\'eriers-Sur-Le-Dan -- France\\
-  +33 602 077 638, +1 650 283 0068 -- olivier.deiss@gatech.edu\\
-  \textbf{http://olivierdeiss.com}
+  %+33 602 077 638, +1 650 283 0068 -- olivier.deiss@gatech.edu\\
+  +33-602-077-638 -- olivier.deiss@gatech.edu\\
+  \url{http://olivierdeiss.com}
 \end{center}
 
-\stylesection{Summary}
+%\stylesection{Summary}
+\stylesummary{Summary:}
 
 \vspace{\marginsummary}
 \begin{itemize}
-  \item Candidate for a MSc. in Computer Science at Georgia Tech, expected to graduate in June 2018
+  \item Candidate for a MSc. in Computer Science at Georgia Tech, expecting to graduate in June 2018
   \item Professional experience in software development on large-scale, complex projects at Thomson Reuters and Google
 \end{itemize}
 \vspace{\marginaftersummary}
@@ -76,7 +85,7 @@
 \vspace{\margincontent}
 \begin{itemize}
   \item Specialization in machine learning, with courses in AI, complexity, and algorithm design \hfill GPA: 4.00
-  \item Research (Fall 2016): Setting up a Hadoop cluster for the analysis of rosbags (ROS) with \textit{C++} jobs
+  \item Research (Fall 2016): Setting up a Hadoop cluster for the analysis of rosbags with \textit{C++} jobs (\textit{ROS})
 \end{itemize}
 
 \styletitle{SUP\'ELEC} \hfill \styleloc{Metz, FRA}\\
@@ -84,6 +93,7 @@
 \vspace{\margincontent}
 \begin{itemize}
   \item Courses in algorithms \& complexity, computer architecture and software engineering \hfill GPA: 3.93
+  \item Master of Engineering to be earned upon graduation from Georgia Tech
 \end{itemize}
 
 \styletitle{LYC\'EE PIERRE CORNEILLE} \hfill \styleloc{Rouen, FRA}\\
@@ -101,7 +111,7 @@
 \begin{itemize}
   \item Designed and implemented a messaging infrastructure between Assistant Server and Android TV (\textit{C++}, \textit{Java})
   \item Integrated this infrastructure as a preferred alternative to Cast, to be used for major media queries on Android TV
-  \item As a result, enabled launching native Android TV apps (YouTube, Netflix) from a query to Google Home
+  \item Enabled launching native apps, including YouTube and Netflix, from a query to Google Home
 \end{itemize}
 
 \styletitle{THOMSON REUTERS} \hfill \styleloc{London, UK}\\ 
@@ -129,7 +139,7 @@
 \vspace{\margincontent}
 \begin{itemize}
   \item Led a research group through the development of software to perform real-time classification of brainwaves (\textit{C++}) 
-  \item Achieved 70\% of correct classification for simple hand gestures (machine learning, signal processing)
+  \item Achieved 70\% of correct classification for simple hand gestures using machine learning and signal processing
   \item Using a \textit{ROS} node combined with our algorithm, built an experiment where users pilot a robot by moving their hands 
 \end{itemize}
 
@@ -152,7 +162,7 @@
 \vspace{\marginmisc}
 
 \renewcommand{\baselinestretch}{0.8}
-I love badminton, algorithms, hiking, \textit{C++} and learning new things. Last year I switched to \textit{Vim} and learned touch typing. This year, I started running and investing too much of my free time in learning the game of \textit{Go}: it's hard but wonderful!
+I love badminton, algorithms, hiking, \textit{C++} and learning new things. Last year I switched to \textit{Vim} and learned touch typing. This year my objectives are to start running, to become a stronger competitive programmer, and to reach 10 kyu level at the game of \textit{Go}!
 
 \end{footnotesize}
 \end{document}
