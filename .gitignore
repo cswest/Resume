@@ -2,3 +2,6 @@
 *.log
 .DS_Store
 *.out
+*.bbl
+*.blg
+*.swp
